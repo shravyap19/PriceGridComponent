@@ -1,0 +1,135 @@
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background-color: #e6eff6;
+}
+
+.child {
+  border-radius: 10px;
+  width: 48%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "general general"
+    "subscription whyUs";
+}
+
+#joinCommunity {
+  color: #70bcba;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: medium;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
+#moneyBack {
+  color: #d1e27e;
+  padding-left: 30px;
+  padding-top: 15px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+#accessDesc {
+  padding-left: 30px;
+  font-family: sans-serif;
+  color: #c9ced6;
+  font-weight: bold;
+  line-height: 22px;
+}
+
+.generalDesc {
+  width: 100%;
+  grid-area: general;
+  background-color: #ffffff;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.subscription {
+  width: 100%;
+  grid-area: subscription;
+  background-color: #2cb3b1;
+  padding: 15px;
+}
+
+#monthlySubscription {
+  color: #ffffff;
+  font-family: sans-serif;
+  padding-left: 30px;
+}
+
+#perDayAmount {
+  color: #9bebef;
+  font-family: serif;
+  padding-left: 30px;
+}
+
+.signUpButton {
+  padding-left: 30px;
+  height: 50%;
+}
+
+button {
+  color: #ffffff;
+  background-color: #bfdf34;
+  width: 70%;
+  height: 40%;
+  border: 1px;
+  border-radius: 4px;
+  font-size: large;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.priceContainer {
+  display: grid;
+  grid-template-columns: min-content auto;
+  align-items: center;
+  column-gap: 10px;
+  grid-auto-rows: min-content;
+}
+
+#amount {
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  color: #ffffff;
+  font-family: serif;
+  padding-left: 30px;
+  font-size: xx-large;
+}
+
+#frequency {
+  padding: 0;
+  margin: 0;
+  line-height: 1.2;
+  color: #5ccbcb;
+}
+
+.whyUs {
+  width: 100%;
+  grid-area: whyUs;
+  background-color: #4abdbd;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+#whyUsDesc {
+  color: #ffffff;
+  font-family: sans-serif;
+  padding-left: 40px;
+}
+
+li {
+  color: #7fdada;
+  font-family: sans-serif;
+  list-style-type: none;
+  font-size: small;
+}
